@@ -3,10 +3,12 @@ body{
    
 }
 .container{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    
 }
 .paginaInicial{
     background-image: url("../img/bb.jpg ")  ;
@@ -14,7 +16,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: rgb(77, 107, 240) solid;
+    border: rgb(194, 181, 181) solid;
     border-radius: 5px;
     width: 900px;
     height: 500px;
@@ -25,7 +27,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: rgb(77, 107, 240) solid;
+    border:lightskyblue solid;
     border-radius: 10px;
     width: 80px;
     height: 50px;
@@ -36,4 +38,11 @@ li{
 }
 li:hover{
     background-color: darkcyan;
+}
+
+a{
+    color: linen;
+    text-decoration: none;
+
+    
 }
