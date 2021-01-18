@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+   
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.paginaInicial{
+    background-image: url("../img/bb.jpg ")  ;
+    background-repeat: round;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rgb(77, 107, 240) solid;
+    border-radius: 5px;
+    width: 900px;
+    height: 500px;
+    color: cornsilk;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rgb(77, 107, 240) solid;
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+
+}
+li:hover{
+    background-color: darkcyan;
+}
