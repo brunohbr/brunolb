@@ -7,11 +7,9 @@ body{
    
 }
 
-header{
-    color: whitesmoke;
-    border-bottom: whitesmoke solid;
-}
+
 .container{
+    background-image: url(../img/bg.jpg);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -20,37 +18,71 @@ header{
     
 }
 .paginaInicial{
-    background-image: url("../img/bb.jpg ")  ;
-    background-repeat: round;
+    background-image: url(../img/bg2.jpg) ;
+    background-size: cover;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    border: rgb(194, 181, 181) solid;
+    
+    border: lightblue solid 5px  ;
+  
     border-radius: 5px;
-    width: 900px;
+    padding: 10px;
+    
+    width: 300px;
     height: 500px;
-    color: cornsilk;
+    color: rgb(17, 17, 17);
+}
+.sobre{
+    background-color: whitesmoke;
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10px;
+    border-right: black solid 20px;
+}
+
+.umquarto{
+    text-align: justify;
+    padding-top: 10px;
+    width: 40%;
+    height: 40%;
+   margin: 5px;
+    
+}
+
+.projetos{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+     flex-direction: row;
+    justify-content: space-between;
+   
+    
+   
 }
 
 li{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border:lightskyblue solid;
-    border-radius: 10px;
-    width: 80px;
-    height: 50px;
-    margin-left: 10px;
+   align-items: center;
+    
+    border-radius: 2px;
+     margin-top: 40px;
     margin-bottom: 20px;
     list-style: none;
 
 }
 li:hover{
-    background-color: darkcyan;
+    color: rgb(63, 157, 235);
 }
 
 a{
-    color: linen;
+    color: rgb(8, 8, 8);
     text-decoration: none;
 
     
@@ -70,3 +102,12 @@ a{
     justify-content: center;
 }
 }
+
+.dados{
+    text-align: center;
+}
+img{
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
