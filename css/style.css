@@ -14,23 +14,24 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-flow: wrap row ;
     justify-content: center;
     
 }
 .paginaInicial{
     background-image: url(../img/bg2.jpg) ;
     background-size: cover;
+    width: 300px;
+    height: 500px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    
+    flex-wrap: wrap;
     border: lightblue solid 5px  ;
-  
     border-radius: 5px;
     padding: 10px;
     
-    width: 300px;
-    height: 500px;
+   
     color: rgb(17, 17, 17);
 }
 .sobre{
@@ -42,16 +43,26 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 10px;
+    margin-top: 10px;
     border-right: black solid 20px;
 }
 
 .umquarto{
     text-align: justify;
     padding-top: 10px;
-    width: 40%;
-    height: 40%;
+    width: 310px;
+    height: 230px;
    margin: 5px;
+   
+   margin-left: 10px;
     
+}
+.umquarto2{
+    text-align: center;
+    padding-top: 10px;
+    width: 310px;
+    height: 230px;
+   margin: 5px;
 }
 
 .projetos{
@@ -88,20 +99,7 @@ a{
     
 }
 
-@media only screen and (max-width: 970px){
-    .paginaInicial{
-        width: 350px;
-        height: 203px;
-    }
-    header{
-        text-align: center;
-    }
-.container{
-    margin-top: 5px;
-    align-items: flex-start;
-    justify-content: center;
-}
-}
+
 
 .dados{
     text-align: center;
@@ -110,4 +108,29 @@ img{
     margin: 10px;
     margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 780px){
+   
+   
+.container{
+   display: flex ;
+   flex-direction: row;
+   justify-content: center;
+   
+  
+}
+.sobre{
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 330px;
+    height: 900px;
+    border-right: black solid 0px;
+    
+    
+}
+
+}
+
 
