@@ -1,137 +1,122 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: black;
-   
+body{   
+    background: linear-gradient(-45deg, #ee7752, #6bb2be, #23a6d5, #734ff5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
-
-
-.container{
-    background-image: url(../img/bg.jpg);
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.bg-montain{   
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc6022' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%2334aa4e' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23b3563d' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%2345885a' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%239b4c58' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23566665' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23824174' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23664471' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%236a378f' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2377227c' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23512daa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size:cover ;
     width: 100vw;
     height: 100vh;
+}
+.central{
     display: flex;
     align-items: center;
-    flex-flow: wrap row ;
     justify-content: center;
-    
-}
-.paginaInicial{
-    background-image: url(../img/bg2.jpg) ;
-    background-size: cover;
-    width: 300px;
-    height: 500px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-wrap: wrap;
-    border: lightblue solid 5px  ;
-    border-radius: 5px;
-    padding: 10px;
-    
-   
-    color: rgb(17, 17, 17);
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 .sobre{
-    background-color: whitesmoke;
-    width: 700px;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 10px;
-    margin-top: 10px;
-    border-right: black solid 20px;
+    min-height: 500px;
+    max-width: 960px;
+    border-radius:  10px ;
+    color: white;
+    padding: 10px;    
+}
+@media only screen and (max-width: 450px) {
+    .sobre {
+        min-height: 630px;
+           }
+  }
+.glass{
+    background: linear-gradient(
+        to right bottom,
+         rgba(255, 255, 255, 0.4),
+         rgba(255, 255, 255, 0.2) );
+    backdrop-filter: blur(1rem);
 }
 
-.umquarto{
-    text-align: justify;
-    padding-top: 10px;
-    width: 310px;
-    height: 230px;
-   margin: 5px;
-   
-   margin-left: 10px;
-    
-}
-.umquarto2{
-    text-align: center;
-    padding-top: 10px;
-    width: 310px;
-    height: 230px;
-   margin: 5px;
+
+.logo{
+    width: 150px;
+    height: 150px;
+    background: rgb(12, 166, 212);
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 30px ;
+    border: white 1px solid;
 }
 
-.projetos{
-    text-align: center;
-}
-
-ul{
-    display: flex;
-     flex-direction: row;
-    justify-content: space-between;
-   
-    
+.logo h1{
+    font-size: 4em;
    
 }
-
-li{
+.redes{
     display: flex;
-   align-items: center;
-    
-    border-radius: 2px;
-     margin-top: 30px;
-    margin-bottom: 20px;
-    list-style: none;
-
+    justify-content: space-evenly;
+    background: linear-gradient(
+     to right bottom,
+     rgba(255, 255, 255, 0.4),
+     rgba(255, 255, 255, 0.2) );
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 300px;
+    margin: auto;
 }
-li:hover{
-    color: rgb(63, 157, 235);
-}
-
-a{
-    color: rgb(8, 8, 8);
-    text-decoration: none;
-
-    
-}
-
-
-
 .dados{
     text-align: center;
+    border-radius: 5px;
+    padding: 10px;
 }
-
-img{
-    margin: 10px;
-    margin-bottom: 5px;
-}
-
-@media only screen and (max-width: 780px){
-   
-   
-.container{
-   display: flex ;
-   flex-direction: row;
-   justify-content: center;
+.contimagem{
+    max-height: 200px;
    
   
+   
 }
-.sobre{
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5px;
-    margin-left: 0px;
-    width: 330px;
-    height: 900px;
-    border-right: black solid 0px;
+.imagem{
+   max-width: 100%;
+   max-height: 100%;
+  
+  
+   
+}
+.textpreto{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 1.1rem;   
+    text-align: justify;
+    margin: 20px 5px ;
+}
+@media only screen and (max-width: 450px) {
+    .textpreto {
+        line-height: 1.2;
     
-    
-}
-
-}
-
+    }
+  }
+a{
+    color: black;
+    text-decoration: none;
+  }
 
