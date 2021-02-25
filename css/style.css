@@ -44,7 +44,7 @@ body{
 }
 @media only screen and (max-width: 450px) {
     .sobre {
-        min-height: 610px;
+        min-height: 620px;
            }
   }
 .glass{
@@ -120,12 +120,23 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      font-size: 1.1rem;   
     text-align: justify;
-    margin: 20px 5px ;
+    
+}
+p {
+    
+    margin: 1px;
+    text-indent: 2rem;
+    
 }
 @media only screen and (max-width: 450px) {
     .textpreto {
         line-height: 1.2;
     
+    }
+    p{
+        font-size: 0.8rem;
+        margin-top: 5px;
+        text-indent: 1rem;
     }
   }
 a{
