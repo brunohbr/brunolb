@@ -1,0 +1,21 @@
+.banner-image {
+  background-image: url("/Portfolio2.0/img/banner-img.jpg");
+  background-size: cover;
+}
+
+.bi {
+  color: #fff !important;
+}
+
+.nav-link:hover, .nav-link.active, .bi:hover {
+  color: #0dcaf0 !important;
+}
+
+.bi {
+  font-size: 1.4rem;
+}
+
+.font-second {
+  font-family: 'Courier New', Courier, monospace;
+}
+/*# sourceMappingURL=style.css.map */
