@@ -1,6 +1,6 @@
 
 .banner-image {
-    background-image: url('/Portfolio2.0/img/banner-img.jpg');
+    background-image: url('/img/banner-img.jpg');
     background-size: cover;
     
   }
@@ -19,4 +19,8 @@
 
   .font-second{
     font-family: 'Courier New', Courier, monospace;
+  }
+
+  #formacao, #contato{
+    background-color: rgb(199, 227, 245);
   }
